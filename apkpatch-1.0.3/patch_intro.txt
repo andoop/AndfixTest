@@ -1,0 +1,29 @@
+怎样使用?
+
+准备两个安装包，一个是有问题的，一个是修复问题的
+
+根据这两个包，生成.apatch文件
+
+usage: apkpatch -f <new> -t <old> -o <output> -k <keystore> -p <***> -a <alias> -e <***>
+
+ -a,--alias <alias>     keystore entry alias.
+ -e,--epassword <***>   keystore entry password.
+ -f,--from <loc>        new Apk file path.
+ -k,--keystore <loc>    keystore path.
+ -n,--name <name>       patch name.
+ -o,--out <dir>         output dir.
+ -p,--kpassword <***>   keystore password.
+ -t,--to <loc>          old Apk file path.
+
+得到.apatch文件后，通过某种方式（网络下载或者adb命令push），将.apatch文件放到手机存储卡中.
+
+有时候，在团队协作中，产生了多个.apatch文件，下面的命令来merge多个补丁文件
+
+usage: apkpatch -m <apatch_path...> -o <output> -k <keystore> -p <***> -a <alias> -e <***>
+ -a,--alias <alias>     keystore entry alias.
+ -e,--epassword <***>   keystore entry password.
+ -k,--keystore <loc>    keystore path.
+ -m,--merge <loc...>    path of .apatch files.
+ -n,--name <name>       patch name.
+ -o,--out <dir>         output dir.
+ -p,--kpassword <***>   keystore password.
