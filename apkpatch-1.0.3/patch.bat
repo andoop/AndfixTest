@@ -1,1 +1,1 @@
-apkpatch -f 2.apk -t 1.apk -o F:\projects\mprojects\AndfixTest\apkpatch-1.0.3\patchs -k mkeystore.jks -p andoop -a andoop -e andoop
+apkpatch -f new.apk -t old.apk -o ./patchs -k mkeystore.jks -p andoop -a andoop -e andoop

@@ -6,6 +6,6 @@ package cn.andoop.android.andfixtest;
 public class Caculator {
 
     public int add(int f,int s){
-        return f+s+1;
+        return f+s;
     }
 }

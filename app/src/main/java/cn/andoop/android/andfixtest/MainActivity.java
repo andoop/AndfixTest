@@ -10,23 +10,16 @@ import java.io.File;
 import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
-
-   // Caculator caculator;
     TextView tv;
-
     @Override
-    protected void onCreate(Bundle
-                                        savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //caculator=new Caculator();
         tv= (TextView) findViewById(R.id.tv_result);
     }
-
     public void caculate(View view){
         tv.setText(new Caculator().add(1,1)+"");
     }
-
     /**
      * 修复问题
      * @param view
@@ -39,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-
     /**
      * 移除所有apatch
      * @param view
