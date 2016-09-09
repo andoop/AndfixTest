@@ -1,7 +1,10 @@
 ## AndfixTest
 ###阿里[Andfix](https://github.com/alibaba/AndFix)学习demo
+###github：https://github.com/andoop/AndfixTest
 ####大概原理
 >通过修改底层的c代码，将方法指针从错误的方法指向补丁中正确的方法，如图
+
+
 
 <img src="http://img.blog.csdn.net/20151113112729932"/>
 >因为是方法的替换，所以Andfix只适用于修改方法逻辑，不能增加方法和类，而QQ空间的[Nuwa](https://github.com/jasonross/Nuwa)却可以增加方法和类
